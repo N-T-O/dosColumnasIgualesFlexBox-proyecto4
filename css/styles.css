@@ -39,3 +39,16 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px){
+    .dos-columnas-FlexBox{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .entrada-blog{
+     /* gap: 2rem; sintaxis muy nueva <----
+        flex-basis: calc(50% - 1rem); <----*/
+        flex: 0 0 calc(50% - 1rem); /* sintaxis mas antigua */
+
+    }
+}
